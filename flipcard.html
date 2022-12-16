@@ -1,0 +1,111 @@
+<html>
+<head></head>
+<style>
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
+
+    
+
+
+.image-container {
+  background-image: url("tilapia-main.jpg"); /* The image used - important! */
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 200px; /* Some height */
+  width: auto;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darksalmon;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: darksalmon;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+</style>
+
+
+<body>
+
+<div class="container">
+    <!-- ... -->
+    <div class="header">
+      <p>Header</p>
+    </div>
+    <!-- ... -->
+
+     <div class="card">
+      <img src="img_avatar.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div> 
+
+    <!-- ... -->
+    <div class="image-container">
+      <div class="text">NATURE</div>
+    </div>
+
+    <!-- ... -->
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+    <!-- ... -->
+
+</div>
+
+</body>
+</html>
