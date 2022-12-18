@@ -16,9 +16,9 @@
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 }
 
-                img {
+                /* img {
                 border-radius: 5px 5px 0 0;
-                }
+                } */
 
                 .header-text{
                     display: flex;
@@ -49,11 +49,13 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    height: 120vh;
+                    align-content: space-between;
+                    height: 130vh;
                     background-color: lightskyblue;
                     font-size: 25px;
                     color: black;
-                    padding: 50px;
+                    padding: 40px;
+                
 
                 }
 
@@ -65,8 +67,8 @@
                 }
 
                 img{
-                    height: 80%;
-                    width: 80%;
+                    height: 100%;
+                    width: 100%;
                 }
                 .projects{
                     color:slategrey;
@@ -103,13 +105,18 @@
                 }
                 .img1, .img2, .img3, .img4{
                     border-radius: 20px;
+                    height: 50vh;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
 
         </style>
     </head>
     <body>
 
-            <div class="main">
+            <div class="card">
 
                 <div class="header-text">
                     
@@ -130,14 +137,19 @@
                 </div>
 
                 <div class="project">
-                   <h2 class="projects">My Projects!</h2>
+
+                   <div><h2 class="projects">My Projects!</h2></div>
 
                    <div class="img1"><a href="persona.html"><img src="personas.jpeg"></a>
                     <p>Personas & Storyboarding</p>
-                   </div>
+                  </div>
+                   
+
                    <div class="img2"><a href="redesign.html"><img src="tilapia-main.jpg"></a>
                     <p>Web Analysis and Redesign</p>
                    </div>
+                   
+
                    <div class="img3"><a href="iterative.html"><img src="iterative.png"></a>
                     <p>Iterative design process</p>
                    </div>
